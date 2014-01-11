@@ -1,0 +1,371 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+	<style>
+		* {
+			margin:0px;
+			-moz-box-sizing: border-box; 
+			-webkit-box-sizing: border-box; 
+			box-sizing: border-box;
+			padding:0px;
+			margin:0px;
+		}
+		
+		html, body {
+			height : 100%;
+		}
+		
+		.container {
+			padding: 1% 0.5%;
+			width: 99% !important;
+			height: 98% !important;
+		}
+	</style
+  </head>
+
+	<body>
+		<div class="container">
+		<div class="row" style="height:100%;">
+		
+			<div class="col-lg-2">
+				
+				<div class="panel-group" id="accordion">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+								Inbox <span class="badge pull-right">20</span>
+								</a>
+							</h4>
+						</div>
+					</div>
+					
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+								Dublin <span class="badge pull-right">3</span>
+								</a>
+							</h4>
+						</div>
+						<div id="collapseTwo" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											Dealing team 1 <span class="badge pull-right">1</span>
+											</a>
+										</h4>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											Dealing team 2 <span class="badge pull-right">2</span>
+										</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+								Luxemburg 
+								</a>
+							</h4>
+						</div>
+						<div id="collapseThree" class="panel-collapse collapse">
+							<div class="panel-body">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											Dealing team 1</span>
+											</a>
+										</h4>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											Dealing team 2</span>
+										</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+								Cayman <span class="badge pull-right">12</span>
+								</a>
+							</h4>
+						</div>
+						<div id="collapseFour" class="panel-collapse collapse">
+							<div class="panel-body">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											Dealing team 1 <span class="badge pull-right">10</span>
+											</a>
+										</h4>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											Dealing team 2</span>
+										</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+						
+				</div>
+			</div>
+			
+			
+			
+			<div class="col-lg-10" style="height:100%;">
+				<div class="panel panel-default" style="height:100%;">
+					<div class="panel-body" style="height:100%;">
+				<div class="row" style="height:5%;">
+					<div class="col-lg-5">
+						<ol class="breadcrumb">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Library</a></li>
+							<li class="active">Data</li>
+						</ol>
+					</div>
+					<div class="col-lg-3">
+						<form class="form" role="form">
+							<div class="btn-group pull-right">
+								<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+									<span class="caret"></span>
+									<span class="sr-only">Toggle Dropdown</span>
+								</button>
+								<div class="dropdown-menu dropdown-form-search" style="padding:10px; width:350px;">
+
+									<ul class="nav nav-tabs nav-justified">
+										<li class="active"><a href="#search-origin" data-toggle="tab">Origin</a></li>
+										<li><a href="#search-document" data-toggle="tab">Document</a></li>
+										<li><a href="#search-task" data-toggle="tab">Task</a></li>
+										<li><a href="#search-metadata" data-toggle="tab">Metadata</a></li>
+									</ul>
+									<br>
+									
+									<div class="tab-content">
+										<div class="tab-pane active" id="search-origin">
+											<div class="form-group">
+												<label for="exampleInputPassword1">Origin type</label>
+												<select class="form-control">
+													<option></option>
+													<option>E-mail</option>
+													<option>Upload</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label for="exampleInputPassword1">Received from</label>
+												<input type="text" class="form-control" id="search">
+											</div>
+											<div class="form-group">
+												<label for="exampleInputPassword1">Description</label>
+												<input type="text" class="form-control" id="search">
+											</div>
+											<div class="form-group">
+												<label for="exampleInputPassword1">Received at</label>
+												<input type="text" class="form-control" id="search">
+											</div>
+										</div>
+										<div class="tab-pane" id="search-document">
+											<div class="form-group">
+												<label for="exampleInputPassword1">Document name</label>
+												<input type="text" class="form-control" id="search">
+											</div>
+										</div>
+										<div class="tab-pane" id="search-task">
+											<div class="form-group">
+												<label for="exampleInputPassword1">Task id</label>
+												<input type="text" class="form-control" id="search">
+											</div>
+											<div class="form-group">
+												<label for="exampleInputPassword1">Task name</label>
+												<input type="text" class="form-control" id="search">
+											</div>
+											<div class="form-group">
+												<label for="exampleInputPassword1">Created</label>
+												<input type="text" class="form-control" id="search">
+											</div>
+										</div>
+										<div class="tab-pane" id="search-metadata">
+											<div class="form-group">
+												<label for="exampleInputPassword1">Business type</label>
+												<select class="form-control">
+													<option>Subscription</option>
+													<option>Nav</option>
+													<option>Redemption</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label for="exampleInputEmail1">Fundgroup id</label>
+												<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+											</div>
+											<div class="form-group">
+												<label for="exampleInputEmail1">Account id</label>
+												<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+											</div>
+											<div class="form-group">
+												<label for="exampleInputPassword1">Holder id</label>
+												<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-group" style="width:70%;">
+								<input type="text" class="form-control" id="search" placeholder="Search in documents...">
+							</div>
+							<!--<a type="button" class="btn btn-default">
+								<span class="glyphicon glyphicon-search"></span>
+							</a>-->
+						</form>
+					</div>
+					<div class="col-lg-4">
+						<div class="btn-group btn-group-justified">
+							<a type="button" class="btn btn-default">
+								<span class="glyphicon glyphicon-tree-conifer"></span> Tree
+							</a>
+							<a type="button" class="btn btn-default">
+								<span class="glyphicon glyphicon-list-alt"></span> Table
+							</a>
+							<a type="button" class="btn btn-default">
+								<span class="glyphicon glyphicon-wrench"></span> Tabs
+							</a>
+							<a type="button" class="btn btn-default">
+								<span class="glyphicon glyphicon-picture"></span> Viewer
+							</a>
+						</div>
+					</div>
+					
+				</div>
+				<div class="row" style="height:25%;">
+					<div class="col-lg-12 table-responsive">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>Table heading</th>
+									<th>Table heading</th>
+									<th>Table heading</th>
+									<th>Table heading</th>
+									<th>Table heading</th>
+									<th>Table heading</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>Table cell</td>
+									<td>Table cell</td>
+									<td>Table cell</td>
+									<td>Table cell</td>
+									<td>Table cell</td>
+									<td>Table cell</td>
+								</tr>
+								<tr>
+								<td>2</td>
+									<td>Table cell</td>
+									<td>Table cell</td>
+									<td>Table cell</td>
+									<td>Table cell</td>
+									<td>Table cell</td>
+									<td>Table cell</td>
+								</tr>
+								<tr>
+								<td>3</td>
+									<td>Table cell</td>
+									<td>Table cell</td>
+									<td>Table cell</td>
+									<td>Table cell</td>
+									<td>Table cell</td>
+									<td>Table cell</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="row" style="height:70%;">
+					<div class="col-lg-3">
+						<ul class="nav nav-tabs nav-justified">
+							<li class="active"><a href="#">Metadata</a></li>
+							<li><a href="#">Checklist</a></li>
+							<li><a href="#">Comments</a></li>
+						</ul>
+						<br>
+						<form role="form">
+							<div class="form-group">
+								<label for="exampleInputPassword1">Business type</label>
+								<select class="form-control">
+									<option>Subscription</option>
+									<option>Nav</option>
+									<option>Redemption</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="exampleInputEmail1">Fundgroup id</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputEmail1">Account id</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputPassword1">Holder id</label>
+								<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+							</div>
+							<button type="submit" class="btn btn-primary">Save</button>
+							<button type="submit" class="btn btn-default">Cancel</button>
+						</form>
+						
+					</div>
+					<div class="col-lg-9" style="height:100%;">
+						<div class="panel panel-default" style="height:100%;">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									Document
+								</h4>
+							</div>
+							<div class="panel-body" style="height:100%;">
+								Document content
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			</div>
+		</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="js/dropdown-form-fix.js"></script>
+	</body>
+</html>
